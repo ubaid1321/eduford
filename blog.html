@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website design </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <body>
+
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navlinks">
+            <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()">Menu</span>
+         
+    </nav>
+    <h1>Our Certificate & online Programs for 2023</h1>
+    
+</section>
+<hr>
+<!--blog page content-->
+<section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg" alt="">
+            <h2>Our certificates & Online Programs for 2023</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, magni quasi! Non hic iste a amet ex delectus sapiente? Placeat deleniti totam et alias sapiente aperiam illo fugit soluta aut.</p>
+        <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus voluptate, dolorum deleniti porro inventore sequi perspiciatis non dolorem quis esse obcaecati architecto quidem velit quae aliquid id possimus iusto magnam?</p>
+        <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laudantium sapiente modi recusandae quos, vel unde alias quo itaque, totam, enim voluptates! Minima repudiandae, qui eius dolores vero dolor under.</p>
+        <br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nisi pariatur neque deleniti nam, tenetur ullam expedita totam numquam praesentium corrupti! Distinctio maiores explicabo quisquam impedit ea deserunt ducimus quos.</p>
+          <div class="comment-box">
+            <h3>Leave a Comment</h3>
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="Submit" class="hero-btn red-btn">Post Comment</button>
+               
+
+
+
+
+
+
+            </form>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Machine Learning </span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Auto Cad </span>
+                <span>32</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>25</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var navlinks = document.getElementById("navlinks")
+    function showMenu(){
+        navlinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

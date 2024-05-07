@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website design </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <body>
+
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navlinks">
+            <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()">Menu</span>
+         
+    </nav>
+    <h1>Contact Us</h1>
+    
+</section>
+<hr>
+<!----contact us-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26398.76015458489!2d74.33128565331879!3d34.20143602283881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e10768ae7739dd%3A0xc5cefc0b98abbd8!2sBaramulla%20193101!5e0!3m2!1sen!2sin!4v1690886247245!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+
+<!--footer-->
+<section class="footer">
+<h4>About Us</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, voluptatum aspernatur. Tenetur <br>veritatis, id at veniam ipsum dignissimos libero vero illo amet rerum nam quam saepe vitae nisi quaerat tempore.</p>
+
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <span class="material-symbols-outlined">phone</span>
+                <span><h5>7006688330</h5>
+                <p>Monday to Friday from 9am to 10Pm</p></span>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">home</span>
+                <span><h5>XYZ Road, ABC Building</h5>
+                <p>Bangalore, Karnataka,IN</p></span>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">email</span>
+                <span><h5>ubaidmir623@gmail.com</h5>
+                <p>Email us for Query</p></span>
+            </div>
+            </div>
+            <div class="contact-col">
+            <form action="https://formspree.io/f/xjvqgepl" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="Email" name="email"placeholder="Enter Email address " required>
+                <input type="text" name="subject"placeholder="Enter Your subject" required>
+                <textarea  rows="8" name="message"placeholder="Message"></textarea>
+                <button type="submit"class="hero-btn red-btn"> Send Message</button>
+            </form>
+
+            </div>
+       
+
+    </div>
+</section>
+<hr>
+
+<script>
+    var navlinks = document.getElementById("navlinks")
+    function showMenu(){
+        navlinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
